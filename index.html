@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayaz Software - Innovative Solutions</title>
+    
+    <link rel="icon" href="header-logo.png" type="image/png">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* MODERN RESET & VARIABLES */
@@ -34,12 +37,12 @@
             line-height: 1.6;
         }
 
-        /* HEADER */
+        /* HEADER - ESKİ HALİNE DÖNDÜ (YAZI) */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 8%;
+            padding: 24px 8%;
             backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
@@ -47,16 +50,14 @@
             border-bottom: 1px solid var(--glass-border);
         }
 
-        /* GÜNCELLENDİ: Logo Boyutu Büyütüldü */
-        .brand-logo {
-            height: 90px; /* BURASI DEĞİŞTİ: 50px'den 90px'e çıktı */
-            width: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .brand-logo:hover {
-            transform: scale(1.05);
+        .brand {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #fff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+            text-decoration: none;
         }
 
         /* HERO SECTION */
@@ -125,7 +126,7 @@
             border-color: rgba(59, 130, 246, 0.3);
         }
 
-        /* APP LOGO KUTUSU (SONIC CLEAN) */
+        /* APP LOGO KUTUSU */
         .icon-box {
             width: 72px;
             height: 72px;
@@ -246,9 +247,7 @@
 <body>
 
     <header>
-        <a href="#" class="brand">
-            <img src="header-logo.png" alt="Ayaz Software" class="brand-logo">
-        </a>
+        <a href="#" class="brand">AyazSoftware</a>
     </header>
 
     <section class="hero">
