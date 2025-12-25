@@ -3,10 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayaz Software - Burak Ayaz Portfolio</title>
-    
-    <link rel="icon" href="favicon.png?v=99" type="image/png">
-
+    <title>Ayaz Software - Innovative Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         /* MODERN RESET & VARIABLES */
@@ -18,16 +15,6 @@
             --text-main: #ffffff;
             --text-muted: #a1a1aa;
             --glass-border: rgba(255, 255, 255, 0.1);
-            --tag-bg: rgba(59, 130, 246, 0.15);
-            --tag-text: #60a5fa;
-            
-            /* Durum Renkleri */
-            --status-published-bg: rgba(16, 185, 129, 0.15);
-            --status-published-text: #34d399;
-            --status-dev-bg: rgba(245, 158, 11, 0.15);
-            --status-dev-text: #fbbf24;
-            --status-proto-bg: rgba(239, 68, 68, 0.15);
-            --status-proto-text: #f87171;
         }
 
         * {
@@ -73,7 +60,7 @@
         /* HERO SECTION */
         .hero {
             text-align: center;
-            padding: 100px 20px;
+            padding: 120px 20px;
             max-width: 900px;
             margin: 0 auto;
         }
@@ -90,13 +77,12 @@
         }
 
         .hero p {
-            font-size: 1.4rem; 
+            font-size: 1.25rem;
             color: var(--text-muted);
             margin-bottom: 40px;
-            max-width: 800px; /* Genişletildi */
+            max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            font-weight: 400;
         }
 
         /* PROJECTS GRID */
@@ -137,174 +123,30 @@
             border-color: rgba(59, 130, 246, 0.3);
         }
 
-        /* APP LOGO KUTUSU */
         .icon-box {
-            width: 72px;
-            height: 72px;
-            background: rgba(59, 130, 246, 0.1);
-            border-radius: 18px;
+            width: 64px;
+            height: 64px;
+            background: rgba(59, 130, 246, 0.2);
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
-            overflow: hidden; 
-        }
-
-        .icon-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 18px;
-        }
-        
-        .icon-box i {
             font-size: 1.8rem;
             color: var(--primary);
-        }
-
-        /* Başlık ve Yanındaki Etiket İçin Düzen */
-        .card-header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            margin-bottom: 10px;
+            margin-bottom: 24px;
         }
 
         .card h3 {
             font-size: 1.5rem;
+            margin-bottom: 12px;
             font-weight: 700;
-            margin: 0;
-        }
-
-        /* DURUM ETİKETLERİ */
-        .status-badge {
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 4px 10px;
-            border-radius: 6px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .status-published {
-            background: var(--status-published-bg);
-            color: var(--status-published-text);
-            border: 1px solid rgba(16, 185, 129, 0.2);
-        }
-
-        .status-dev {
-            background: var(--status-dev-bg);
-            color: var(--status-dev-text);
-            border: 1px solid rgba(245, 158, 11, 0.2);
-        }
-
-        .status-proto {
-            background: var(--status-proto-bg);
-            color: var(--status-proto-text);
-            border: 1px solid rgba(239, 68, 68, 0.2);
         }
 
         .card p {
             color: var(--text-muted);
-            margin-bottom: 20px;
-            font-size: 0.95rem; 
+            margin-bottom: 30px;
+            font-size: 1rem;
             flex-grow: 1;
-            line-height: 1.6;
-        }
-
-        /* TEKNOLOJİ ETİKETLERİ */
-        .tech-stack {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            margin-bottom: 25px;
-        }
-
-        .tech-tag {
-            font-size: 0.75rem;
-            font-weight: 600;
-            padding: 4px 12px;
-            background: var(--tag-bg);
-            color: var(--tag-text);
-            border: 1px solid rgba(59, 130, 246, 0.2);
-            border-radius: 50px;
-        }
-
-        /* GELİŞTİRİCİ BÖLÜMÜ CSS */
-        .developer-section {
-            padding: 20px 8% 60px;
-            text-align: center;
-        }
-
-        .dev-container {
-            background: linear-gradient(145deg, rgba(39, 39, 42, 0.4), rgba(59, 130, 246, 0.05));
-            border: 1px solid var(--glass-border);
-            border-radius: 24px;
-            padding: 50px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .dev-container::before {
-            content: "</>";
-            position: absolute;
-            top: -20px;
-            right: 20px;
-            font-size: 10rem;
-            opacity: 0.03;
-            font-family: monospace;
-            color: #fff;
-            pointer-events: none;
-        }
-
-        .dev-role {
-            color: var(--primary);
-            font-size: 0.9rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .dev-name {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, #fff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .dev-desc {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            max-width: 500px;
-            margin: 0 auto 30px;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .social-icon {
-            color: var(--text-muted);
-            font-size: 1.5rem;
-            transition: all 0.3s;
-            padding: 10px;
-            border-radius: 50%;
-            border: 1px solid transparent;
-        }
-
-        .social-icon:hover {
-            color: var(--primary);
-            background: rgba(59, 130, 246, 0.1);
-            border-color: rgba(59, 130, 246, 0.2);
-            transform: translateY(-3px);
         }
 
         /* BUTTONS */
@@ -313,7 +155,6 @@
             gap: 12px;
             width: 100%;
             flex-wrap: wrap;
-            margin-top: auto; 
         }
 
         .btn {
@@ -352,9 +193,9 @@
             border-color: var(--text-muted);
         }
         
-        /* FOOTER */
+        /* FOOTER & CONTACT BUTTON */
         footer {
-            margin-top: 50px;
+            margin-top: 100px;
             padding: 80px 8%;
             border-top: 1px solid var(--glass-border);
             text-align: center;
@@ -382,6 +223,7 @@
             opacity: 0.6;
         }
 
+        /* RESPONSIVE */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .btn-group { flex-direction: column; }
@@ -395,117 +237,54 @@
     </header>
 
     <section class="hero">
-        <h1>Individual Software <br><span>Developer</span></h1>
-        <p>I develop real-world applications with a strong focus on performance and clean code principles.</p>
+        <h1>Building the Future of <br><span>Software</span></h1>
+        <p>We craft high-performance, user-centric software solutions designed to simplify your daily life.</p>
     </section>
 
     <section class="projects-section">
-        <div class="section-header">SELECTED PROJECTS</div>
+        <div class="section-header">OUR PROJECTS</div>
         
         <div class="grid">
             <div class="card">
                 <div class="icon-box">
-                    <img src="logo.png" alt="Sonic Clean Logo">
+                    <i class="fas fa-tint"></i>
                 </div>
+                <h3>Sonic Clean</h3>
+                <p>Advanced frequency technology to remove water and dust from your phone's speaker. Restore your audio quality in seconds with our smart cleaning algorithm.</p>
                 
-                <div class="card-header-row">
-                    <h3>Sonic Clean</h3>
-                    <span class="status-badge status-published">Published</span>
-                </div>
-
-                <p>Native Android application designed to expel water from speakers using specific frequencies. Successfully deployed to Google Play Store.</p>
-                
-                <div class="tech-stack">
-                    <span class="tech-tag">Kotlin</span>
-                    <span class="tech-tag">Android API</span>
-                </div>
-
                 <div class="btn-group">
                     <a href="https://play.google.com/store/apps/details?id=com.ayazsoftware.sonicclean&hl=en" class="btn btn-primary" target="_blank">
                         <i class="fab fa-google-play"></i> Download
                     </a>
-                    <a href="privacy.html" class="btn btn-secondary">
+                    
+                    <a href="http://ayazsoftware.com/sonic-clean-privacy/" class="btn btn-secondary" target="_blank">
                         <i class="fas fa-shield-alt"></i> Privacy
                     </a>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="icon-box" style="background: rgba(16, 185, 129, 0.1);">
-                    <i class="fas fa-camera-retro" style="color: #10b981;"></i>
+            <div class="card" style="opacity: 0.7;">
+                <div class="icon-box" style="background: rgba(255, 255, 255, 0.1); color: white;">
+                    <i class="fas fa-code"></i>
                 </div>
-                
-                <div class="card-header-row">
-                    <h3>Focury</h3>
-                    <span class="status-badge status-dev">In Development</span>
-                </div>
-
-                <p>Modern photo editing tool featuring AI-powered filters. Currently being built with Jetpack Compose for a responsive UI architecture.</p>
-                
-                <div class="tech-stack">
-                    <span class="tech-tag">Kotlin</span>
-                    <span class="tech-tag">Jetpack Compose</span>
-                </div>
-
+                <h3>Coming Soon</h3>
+                <p>We are working on new innovative tools. Stay tuned for our next big release.</p>
                 <div class="btn-group">
-                    <span class="btn btn-secondary" style="width: 100%; justify-content: center; cursor: default;">
-                        <i class="fas fa-code-branch"></i> Work in Progress
-                    </span>
+                    <span class="btn btn-secondary" style="cursor: default;">In Development</span>
                 </div>
-            </div>
-
-            <div class="card">
-                <div class="icon-box" style="background: rgba(239, 68, 68, 0.1);">
-                    <i class="fas fa-file-pdf" style="color: #ef4444;"></i>
-                </div>
-                
-                <div class="card-header-row">
-                    <h3>Word to PDF</h3>
-                    <span class="status-badge status-proto">Prototype</span>
-                </div>
-
-                <p>Web-based document conversion utility. Core functionality implemented with Python scripts for server-side file processing.</p>
-                
-                <div class="tech-stack">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">HTML/CSS</span>
-                </div>
-
-                <div class="btn-group">
-                     <span class="btn btn-secondary" style="width: 100%; justify-content: center; cursor: default;">
-                        <i class="fas fa-flask"></i> Prototype
-                    </span>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <section class="developer-section">
-        <div class="dev-container">
-            <div class="dev-role">Founded & Developed by</div>
-            <h2 class="dev-name">Burak Ayaz</h2>
-            <p class="dev-desc">
-                Individual developer creating useful mobile applications and web tools. Focused on clean code and user experience.
-            </p>
-            <div class="social-icons">
-                <a href="https://github.com/ayazsoftwaredev" target="_blank" class="social-icon" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="mailto:burak_ayazz@icloud.com" class="social-icon" title="Email">
-                    <i class="fas fa-envelope"></i>
-                </a>
             </div>
         </div>
     </section>
 
     <footer>
         <div class="contact-box">
-            <h2>Benimle İletişime Geç</h2>
+            <h2>Contact Us</h2>
+            
             <a href="mailto:burak_ayazz@icloud.com" class="btn btn-primary btn-large">
                 <i class="fas fa-paper-plane"></i> Send Email
             </a>
         </div>
+        
         <div class="copyright">
             &copy; 2025 Ayaz Software. All rights reserved.
         </div>
