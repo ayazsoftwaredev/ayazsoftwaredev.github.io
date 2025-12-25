@@ -34,12 +34,12 @@
             line-height: 1.6;
         }
 
-        /* HEADER */
+        /* HEADER - GÜNCELLENDİ */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 24px 8%;
+            padding: 15px 8%; /* Padding biraz azaltıldı */
             backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
@@ -47,14 +47,16 @@
             border-bottom: 1px solid var(--glass-border);
         }
 
-        .brand {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(to right, #fff, #94a3b8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            letter-spacing: -0.5px;
-            text-decoration: none;
+        /* YENİ: Header Logosu İçin Ayar */
+        .brand-logo {
+            height: 50px; /* Logo yüksekliği - İsteğe göre artırılabilir */
+            width: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            transform: scale(1.05); /* Üzerine gelince hafif büyüsün */
         }
 
         /* HERO SECTION */
@@ -123,29 +125,26 @@
             border-color: rgba(59, 130, 246, 0.3);
         }
 
-        /* İKON KUTUSU GÜNCELLENDİ */
+        /* APP LOGO KUTUSU (SONIC CLEAN) */
         .icon-box {
-            width: 72px; /* Logo için biraz büyüttük */
+            width: 72px;
             height: 72px;
-            background: rgba(59, 130, 246, 0.1); /* Arka planı biraz daha şeffaf yaptık */
+            background: rgba(59, 130, 246, 0.1);
             border-radius: 18px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 24px;
-            padding: 0; /* Padding'i sıfırladık ki resim tam otursun */
-            overflow: hidden; /* Taşan kısımları gizle */
+            overflow: hidden; 
         }
 
-        /* YENİ: Logo resmi için özel stil */
         .icon-box img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Resmi kutuya tam doldur */
+            object-fit: cover;
             border-radius: 18px;
         }
         
-        /* Coming Soon kartındaki ikon için eski stil devam ediyor */
         .icon-box i {
             font-size: 1.8rem;
             color: var(--primary);
@@ -238,7 +237,6 @@
             opacity: 0.6;
         }
 
-        /* RESPONSIVE */
         @media (max-width: 768px) {
             .hero h1 { font-size: 2.5rem; }
             .btn-group { flex-direction: column; }
@@ -248,7 +246,9 @@
 <body>
 
     <header>
-        <a href="#" class="brand">AyazSoftware</a>
+        <a href="#" class="brand">
+            <img src="header-logo.png" alt="Ayaz Software" class="brand-logo">
+        </a>
     </header>
 
     <section class="hero">
@@ -271,7 +271,6 @@
                     <a href="https://play.google.com/store/apps/details?id=com.ayazsoftware.sonicclean&hl=en" class="btn btn-primary" target="_blank">
                         <i class="fab fa-google-play"></i> Download
                     </a>
-                    
                     <a href="https://ayazsoftwaredev.github.io/sonic-clean-privacy/" class="btn btn-secondary" target="_blank">
                         <i class="fas fa-shield-alt"></i> Privacy
                     </a>
@@ -294,12 +293,10 @@
     <footer>
         <div class="contact-box">
             <h2>Contact Us</h2>
-            
             <a href="mailto:burak_ayazz@icloud.com" class="btn btn-primary btn-large">
                 <i class="fas fa-paper-plane"></i> Send Email
             </a>
         </div>
-        
         <div class="copyright">
             &copy; 2025 Ayaz Software. All rights reserved.
         </div>
